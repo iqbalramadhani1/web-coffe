@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  font-family: 'Pacifico';
+  position: relative;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 800px;
+  float: left;
+  color: black;
+}
+.menu {
+  float: right;
+}
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+}
+
+nav ul li a:hover {
+  color: #b6b3b3;
+}
+
+#content #home, #content #about{
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.colom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  color: #6E2C00;
+}
+.colom p {
+  margin: 10px 0px;
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+.colom h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+a.box {
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.featured-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-cont {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-cont img{
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+}
+
+aside {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.profile-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: #363434 0px 0px 10px;
+}
+   
+  *{
+      box-sizing: border-box;
+}
+
+footer {
+    padding: 20px;
+    color: #6E2C00;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .logo a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .menu {
+    width: 100%;
+    margin: 0;
+  }
+  nav .menu ul {
+    text-align: center;
+    margin: auto;
+  }
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+  }
+
+  #content #home, #content #about {
+    display: block;
+  }
+
+  .flex-cont img {
+    width: 50%;
+  }
+}
